@@ -1,0 +1,27 @@
+.dayElem {
+    width: calc(100% / 7);
+    /*border: 1px solid black;*/
+    /*border-radius: 8px;*/
+    /*padding: 1em;*/
+    /*margin: 0.5em;*/
+
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+}
+
+.dayElem > img {
+    width: 48px;
+}
+
+.dayElem > h3 {
+    /*text-align: center;*/
+    margin: 0 0 0.5em 0;
+}
+
+.temperatures {
+    display: flex;
+    flex-flow: column;
+
+    padding: 0.3em;
+}

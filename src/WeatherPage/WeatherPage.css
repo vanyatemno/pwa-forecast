@@ -1,0 +1,11 @@
+
+
+.weatherElements {
+    width: 100%;
+    padding: 1em;
+
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}

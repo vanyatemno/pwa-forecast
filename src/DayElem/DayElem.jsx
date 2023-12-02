@@ -31,15 +31,18 @@ function DayElem({data}) {
     return (
         <div className='dayElem'>
             <h3>{headerName(data.day)}</h3>
-            <span><b>Avg temp: {data.all_day.temperature}°C</b></span>
             <img src={require('../icons/' + data.icon + '.png')} alt="icon"/>
 
-            <span>Max: {data.all_day.temperature_max}</span>
-            <span>Min: {data.all_day.temperature_min}</span>
+            <div className='infoDayElem'>
+                <span><b>Avg temp: {data.all_day.temperature}°C</b></span>
+                <span>Max: {data.all_day.temperature_max}</span>
+                <span>Min: {data.all_day.temperature_min}</span>
 
-            <span><b>Precipitation</b></span>
-            <span>{data.all_day.precipitation.type}, {data.all_day.precipitation.total}cm</span>
+                <span><b>Precipitation</b></span>
+                <span>{data.all_day.precipitation.type}, {data.all_day.precipitation.total}cm</span>
 
+            </div>
+            
         </div>
     );
 

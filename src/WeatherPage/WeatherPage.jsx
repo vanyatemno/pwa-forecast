@@ -70,7 +70,7 @@ function WeatherPage () {
     if (isLoading) return (<div><h1>Loading content...{console.log(info)}</h1></div>);
 
     return (
-        <div>
+        <div className='weatherPage'>
             <h2>Weather in {city ? city : 'Lviv'}</h2>
             <div className='weatherElements'>
                 {

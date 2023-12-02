@@ -1,11 +1,24 @@
-
+.weatherPage {
+    padding: 1em;
+}
 
 .weatherElements {
     width: 100%;
-    padding: 1em;
+    /* padding: 1em; */
 
     display: flex;
     flex-flow: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
+
+@media only screen and (max-width: 768px) {
+    .weatherElements {
+        display: flex;
+        flex-flow: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    
+  }

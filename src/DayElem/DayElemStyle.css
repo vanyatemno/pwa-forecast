@@ -10,6 +10,12 @@
     justify-content: space-evenly;
 }
 
+.dayElem > .infoDayElem {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+}
+
 .dayElem > img {
     width: 48px;
 }
@@ -25,3 +31,33 @@
 
     padding: 0.3em;
 }
+
+@media only screen and (max-width: 768px) {
+    .dayElem {
+        width: -webkit-fill-available;
+        padding: 1em;
+        margin-bottom: 0.4em;
+        
+        border: 1px solid black;
+        border-radius: 8px;
+
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: 32px 190px;
+        grid-template-areas: 'a b'
+                             'c d'
+    }
+
+    .dayElem > h3 {
+        grid-area: a;
+    }
+
+    .dayElem > .infoDayElem {
+        grid-area: c;
+    }
+
+    .dayElem img {
+        grid-area: d;
+        width: 96px;
+    }
+  }
